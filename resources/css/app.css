@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .input-default {
+      @apply rounded-xl p-2 m-1;
+    }
+  }
+
+
+.popin{
+
+    position: relative;
+    animation-name: pop;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+@keyframes pop {
+    from {left: 0px;}
+    to {left: 320px;}
+}
+
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown a:hover {background-color: #ddd;}
+
+  .show {display: block;}
